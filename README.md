@@ -1,5 +1,5 @@
 # Notification Service 
-## _Sending notificaiton emails asynchronoulsy_ 
+## _Sending notification emails asynchronoulsy_ 
 
 This code base contains logic/structure  for sending the notfication email asynchronosly
 ## Features
