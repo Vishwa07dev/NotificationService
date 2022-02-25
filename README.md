@@ -7,7 +7,7 @@ This code base contains logic/structure  for sending the notfication email async
 * Notfification Service will run a job every 30 seconds to gather all the requests for last 30 seconds and send notifications
 
   
-More details around this can be found [here](https://docs.google.com/document/d/1x866VrSsjchFf7dhD7U2zYLbzj-tt34STWuDMMyL6Uc/edit?usp=sharing) 
+More details around this can be found [here](https://docs.google.com/document/d/1BBZSD4MQFWPE-yXs6gFyP7KUfxgBjLCzbVrH-vjK3Do/edit?usp=sharing) 
 
 ## How is the code organized in this repo ?
 The whole codebase is present in the single branch [main] 
