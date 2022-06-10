@@ -1,34 +1,39 @@
 const nodemailer = require('nodemailer');
 
+/**
+ *? I need to setup the nodemailer for send the emails
+ *? SMTP host details
+ *? credentials if needed
+ */
+
 module.exports = nodemailer.createTransport({
-    port: 465,               // true for 465, false for other ports
+    port: 465,
     host: "smtp.gmail.com",
     auth: {
-        user: 'vish007dev@gmail.com',
-        pass: 'Welcome@07',
+        user: "dev.udayteja@gmail.com",
+        pass: "uday@facebook.com"
     },
-    secure: true,
+    secure: true
 });
 
+/**
+ * ! Transporter will be used to send the emails
+ */
 
-/** 
-const mailData = {
-    from: 'crm-notification-service@gmail.com',
-    to: 'kankvish@gmail.com',
-    subject: 'Sending Email using Node.js',
-    text: 'That was easy!',
-    html: '<b>Hey there! </b> <br> This is our first message sent with Nodemailer<br/>',
-};
+//! Testing
+// const mailDataObj = {
+    
+//     from: "udayteja@facebook.com",
+//     to: "dev.udayteja@gmail.com",
+//     subject: "Test Mail",
+//     text: "This is test mail"
 
+// }
 
-transporter.sendMail(mailData, function (err, info) {
-    if (err)
-        console.log(err)
-    else
-        console.log(info);
-});
+// transporter.sendMail((mailDataObj), (err, info) => {
+//     if(err) {
+//         console.log(err);
+//         return;
+//     } console.log(info);
+// });
 
-
-**/
-
-//https://myaccount.google.com/lesssecureapps hit this link to allow your less secure app access gmail
