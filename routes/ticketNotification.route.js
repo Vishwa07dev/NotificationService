@@ -1,9 +1,11 @@
-const notificationController = require('../controllers/ticketNotification.controller');
-//const { authJwt, verifyTicketRequestBody } = require("../middlewares");
+/**
+ * This will contain the route for the ticket notification request.
+ */
 
-module.exports = function (app) {
+const notificationController = require("../controllers/notificationController");
 
-    app.post("/notifiServ/api/v1/notifications", notificationController.acceptNotificationRequest);
-    app.get("/notifiServ/api/v1/notifications/:id", notificationController.getNotificationStatus);
+module.exports = (app) => {
 
+    app.post("/notifServ/api/v1/notifications", notificationController.acceptNotificationRequest);
+    app.get("/notifServ/api/v1/notifications/:id", notificationController.getNotificationStatus);
 }
